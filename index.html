@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic slideshow</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="" />
+        <meta name="author" content="Julien Sebag" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:locale" content="en_GB" />
+        <!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
+        <link href="/images/" rel="shortcut icon" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.min.css" />
+
+        <!-- JS -->
+    </head>
+
+    <body>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="https://images.unsplash.com/photo-1636390785258-f59cd6883a03?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                        alt="1">
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1636390785299-b4df455163dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                        alt="2">
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1634705146926-b8fbca28f431?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1928&q=80"
+                        alt="3">
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1636207543865-acf3ad382295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="4">
+                </li>
+            </ul>
+
+            <div class="buttons">
+                <button id="previous">
+                    <svg>
+                        <use xlink:href="/images/icon-sprite.svg#chevron-left"></use>
+                    </svg>
+                </button>
+
+                <button id="next">
+                    <svg>
+                        <use xlink:href="/images/icon-sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="pagination"></ul>
+        </div>
+        <!-- JS -->
+        <script src="/js/script.js"></script>
+    </body>
+</html>
