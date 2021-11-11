@@ -45,26 +45,19 @@ nextButton.addEventListener("click", () => {
     if (currentSlide === lastSlide) {
         slides.forEach(slide => {
             if (slide.getAttribute("class") === "previous") {
-                slide.classList.add("next")
-                slide.classList.remove("previous")
+                slide.setAttribute("class", "next")
             }
         })
 
-        firstSlide.classList.remove("next")
-        firstSlide.classList.add("current")
-
-        lastSlide.classList.add("next")
-        lastSlide.classList.remove("current")
+        firstSlide.setAttribute("class", "current")
+        lastSlide.setAttribute("class", "next")
 
         // Pagination
         currentDot.classList.remove("active")
         firstDot.classList.add("active")
     } else {
-        currentSlide.classList.add("previous")
-        currentSlide.classList.remove("current")
-
-        nextSlide.classList.add("current")
-        nextSlide.classList.remove("next")
+        currentSlide.setAttribute("class", "previous")
+        nextSlide.setAttribute("class", "current")
 
         // Pagination
         currentDot.classList.remove("active")
@@ -86,25 +79,18 @@ previousButton.addEventListener("click", () => {
     if (currentSlide === firstSlide) {
         slides.forEach(slide => {
             if (slide.getAttribute("class") === "next") {
-                slide.classList.add("previous")
-                slide.classList.remove("next")
+                slide.setAttribute("class", "previous")
             }
         })
 
-        lastSlide.classList.remove("next")
-        lastSlide.classList.add("current")
-
-        firstSlide.classList.add("previous")
-        firstSlide.classList.remove("current")
+        lastSlide.setAttribute("class", "current")
+        firstSlide.setAttribute("class", "previous")
 
         currentDot.classList.remove("active")
         lastDot.classList.add("active")
     } else {
-        currentSlide.classList.add("next")
-        currentSlide.classList.remove("current")
-
-        previousSlide.classList.add("current")
-        previousSlide.classList.remove("previous")
+        currentSlide.setAttribute("class", "next")
+        previousSlide.setAttribute("class", "current")
 
         currentDot.classList.remove("active")
         previousDot.classList.add("active")
